@@ -41,10 +41,10 @@ void trackBack()
 
 void Knapsack()
 {
-	for (int i1 = 0; i1 < weight[n - 1]; i1++)
-		dpTable[n - 1][i1] = 0;
-	for (int i2 = weight[n - 1]; i2 < c; i2++)
-		dpTable[n - 1][i2] = value[n - 1];
+	for (int i = 0; i < weight[n - 1]; i++)
+		dpTable[n - 1][i] = 0;
+	for (int i = weight[n - 1]; i < c; i++)
+		dpTable[n - 1][i] = value[n - 1];
 
 	for (int i = n - 2; i > 0; i--)
 	{
